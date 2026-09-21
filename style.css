@@ -1,10 +1,137 @@
-body {
-    background-color: #f0f8ff;
+*{
+    padding:0;
+    margin:0;
+}
+    h1{
     text-align: center;
-    font-family: Arial, sans-serif;
+}
+nav{
+    height: 60px;
+    background-color: #43270f;
+    padding:5px;
+    margin:5px;
+   
+}
+nav a{
+   color: #f5e6c8;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin:0;
+    background-color: #fff8ed;
+    color:black
+}
+section{
+    padding:40px;
+    margin:10px
+}
+#menu table{
+    width:75%;
+    margin:auto;
+}
+#menu th{
+    background-color: green;
+    padding: 5px;
+}
+#menu td{
+    background-color:#03071C;
+}
+#menu th{
+    color: antiquewhite;
+}
+#menu td{
+    color:#fff8ed ;
+    font-family: 'Brush Script MT', cursive; font-size: 26px;
+}
+#menu td:last-child {
+    color: #f5b700;
+}
+#menu th {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#menu table,
+#menu th,
+#menu td {
+    border: 1px solid #f5b700;
+}
+#about {
+    background-color: #f5e6c8;
+}
+#about p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+}
+#gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.gallery-images img {
+    border-radius: 12px;
+}
+.gallery-images img {
+    transition: 0.3s;
 }
 
-h1 {
-    color: #2f4f4f;
-    margin-top: 50px;
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+#hours {
+    background-color: #e8f0e8;
+    text-align: center;
+}
+#contact {
+    background-color: #f5e6c8;
+    text-align: center;
+}
+footer {
+    background-color: #43270f;
+    color: #f5e6c8;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+     .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+     nav a {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+  #menu table {
+        width: 100%;
+        font-size: 14px;
+    }
+    section {
+    padding: 25px 15px;
+    margin: 10px;
+}
+
+}
+#home{
+    padding:80px 20px;
+    text-align:center;
+}
+#home h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
 }
